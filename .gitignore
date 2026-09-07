@@ -1,6 +1,6 @@
 # Data
-data/raw/*
-!data/raw/.gitkeep
+data/*
+!data/.gitkeep
 
 # Jupyter
 .ipynb_checkpoints/

@@ -13,9 +13,10 @@ Q-Learning algorithm for anomaly detection — Research Code
 ```
 📁 notebooks/
 ├── 01_synthetic_dql_ae.ipynb          # Synthetic dataset experiments
-├── 02_kaggle_creditcard.ipynb # Kaggle Credit Card — Full pipeline
+├── 02_kaggle_credit_card_ae.ipynb     # Kaggle Credit Card — Full pipeline
 ├── 03_unsw_nb15_dql_ae.ipynb          # UNSW-NB15 — Full pipeline
-└── 04_ton_iot_dql_ae.ipynb            # TON_IoT — Full pipeline
+├── 04_ton_iot_dql_ae.ipynb            # TON_IoT — Full pipeline
+└── 05_kaggle_dql_with_seeds.ipynb     # Kaggle Credit Card — earlier draft, superseded by 02
 📁 data/
 ├── creditcard.csv                      # Kaggle Credit Card (download separately)
 ├── UNSW_NB15_training-set.parquet     # UNSW-NB15 training set
@@ -46,7 +47,7 @@ Q-Learning algorithm for anomaly detection — Research Code
 - 5-seed statistical validation
 - Symmetric vs Asymmetric reward comparison
 
-### `02_kaggle_creditcard_complete.ipynb` ⭐ Complete Pipeline
+### `02_kaggle_credit_card_ae.ipynb` ⭐ Complete Pipeline
 - **Step 1:** Imports
 - **Step 2:** Load & Preprocess (`creditcard.csv`)
 - **Step 3:** Isolation Forest → Table VII
@@ -68,6 +69,9 @@ Q-Learning algorithm for anomaly detection — Research Code
 - Isolation Forest, Simple/Wide/Deep AE, DQL → Tables II, III
 - Extended metrics → Table V
 - Symmetric vs Asymmetric reward → Table IV
+
+### `05_kaggle_dql_with_seeds.ipynb`
+Earlier iteration of the Kaggle Credit Card pipeline, kept for reference. Superseded by `02_kaggle_credit_card_ae.ipynb`, which adds the extended-metrics step (Table V) and consolidated final summary.
 
 ---
 
@@ -141,7 +145,7 @@ pip install tensorflow scikit-learn pandas numpy matplotlib pyarrow
 
 1. Clone/download the repository
 2. Place dataset files in `data/` folder
-3. Run notebooks in order (01 → 04)
+3. Run notebooks in order (01 → 04); `05` is an earlier draft kept for reference and is not required
 4. Each notebook is self-contained — run all cells sequentially
 
 > **Important:** For Kaggle notebook, download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place in same folder.
