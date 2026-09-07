@@ -1,5 +1,4 @@
-# Architecture and reward function of Deep
-Q-Learning algorithm for anomaly detection — Research Code
+# Architecture and reward function of Deep Q-Learning algorithm for anomaly detection — Research Code
 
 **Paper:** Architecture and reward function of Deep Q-Learning algorithm for anomaly detection  
 **Conference:** ISCMI 2026 — Vienna, Austria (November 18-20, 2026)  
